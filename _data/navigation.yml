@@ -1,0 +1,77 @@
+#
+# Work based on https://github.com/mmistakes/minimal-mistakes/blob/master/_data/ui-text.yml
+#
+# Configuration: Add to _config.yml
+# locale: "en-US"  [YOUR PREFERRED LOCALE]
+#
+# How to use:
+# {{ site.data.navigation[site.locale].nav.<var_name> | default: 'text' }}
+
+# English (default)
+# -----------------
+cn: &DEFAULT_CN
+  nav:
+    - title: "技术服务"
+      section: services
+    - title: "产品服务"
+      section: portfolio
+    - title: 企业简介
+      section: about
+    - title: "发展历程"
+      section: timeline
+    - title: "团队风采"
+      section: team
+    - title: "联系我们"
+      section: contact
+zh-CN:
+    <<: *DEFAULT_CN
+
+# English (default)
+# -----------------
+en: &DEFAULT_EN
+  nav:
+    - title: "Services"
+      section: services
+    - title: "Portfolio"
+      section: portfolio
+    - title: "About"
+      section: about
+    - title: "Timeline"
+      section: timeline
+    - title: "Team"
+      section: team
+    - title: "Contact"
+      section: contact
+    - title: "Theme Source"
+      url: https://github.com/raviriley/agency-jekyll-theme/
+en-US:
+  <<: *DEFAULT_EN
+en-CA:
+  <<: *DEFAULT_EN
+en-GB:
+  <<: *DEFAULT_EN
+en-AU:
+  <<: *DEFAULT_EN
+
+# Spanish
+# -------
+es: &DEFAULT_ES
+  nav:
+    - title: "Servicios"
+      section: servicios
+    - title: "Portafolio"
+      section: portafolio
+    - title: "Sobre Nosotros"
+      section: nosotros
+    - title: "Cronología"
+      section: cronologia
+    - title: "Equipo"
+      section: equipo
+    - title: "Contáctenos"
+      section: contacto
+    - title: "Fuente de la plantilla"
+      url: https://github.com/raviriley/agency-jekyll-theme/
+es-ES:
+  <<: *DEFAULT_ES
+es-CO:
+  <<: *DEFAULT_ES
